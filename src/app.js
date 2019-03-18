@@ -25,13 +25,6 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('*', (req, res) => {
-    res.render('404', {
-        title: '404',
-        name: 'Andrew Mead',
-        errorMessage: 'Page not found.'
-    })
-})
 
 app.listen(5000, () => {
     console.log('Server is up on port 3000.')
